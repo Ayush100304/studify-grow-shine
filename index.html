@@ -1,24 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>studify-grow-shine</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studify - Educational Coaching Institute</title>
+    <meta name="description" content="Studify - Premier educational coaching institute offering quality education, expert faculty, and personalized learning programs for students.">
+    <meta name="keywords" content="education, coaching, institute, learning, students, tuition, academic excellence">
+    <link rel="icon" href="public/logo.png" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="public/logo.png" alt="Studify Logo" class="logo">
+                <span class="brand-name">Studify</span>
+            </div>
+            <div class="nav-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <meta property="og:title" content="studify-grow-shine" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Unlock Your Academic <span class="highlight">Potential</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Join Studify's premier coaching programs and excel in your academic journey with our expert faculty and personalized learning approach.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#courses" class="btn btn-primary">Explore Courses</a>
+                    <a href="#contact" class="btn btn-secondary">Get Started</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="stats-card">
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Students Enrolled</p>
+                    </div>
+                    <div class="stat">
+                        <h3>95%</h3>
+                        <p>Success Rate</p>
+                    </div>
+                    <div class="stat">
+                        <h3>15+</h3>
+                        <p>Expert Teachers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Studify</h2>
+                <p>Empowering students to achieve academic excellence through innovative teaching methods</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="mission">
+                        <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+                        <p>To provide quality education that nurtures intellectual growth and helps students achieve their academic goals through personalized learning experiences.</p>
+                    </div>
+                    <div class="vision">
+                        <h3><i class="fas fa-eye"></i> Our Vision</h3>
+                        <p>To be the leading educational institute that transforms learning into an engaging, effective, and enjoyable experience for every student.</p>
+                    </div>
+                    <div class="approach">
+                        <h3><i class="fas fa-graduation-cap"></i> Teaching Approach</h3>
+                        <p>We believe in interactive learning, small batch sizes, regular assessments, and continuous mentoring to ensure each student reaches their full potential.</p>
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <h4>Small Batches</h4>
+                        <p>Limited students per batch for personalized attention</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h4>Expert Faculty</h4>
+                        <p>Experienced teachers with proven track records</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Progress Tracking</h4>
+                        <p>Regular assessments and performance analysis</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-clock"></i>
+                        <h4>Flexible Timings</h4>
+                        <p>Multiple batch timings to suit every schedule</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Courses</h2>
+                <p>Comprehensive programs designed for academic success</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-header">
+                        <i class="fas fa-calculator"></i>
+                        <h3>Mathematics</h3>
+                    </div>
+                    <div class="course-content">
+                        <p>Complete mathematics program covering algebra, geometry, calculus, and more.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Class 8-12</li>
+                            <li><i class="fas fa-check"></i> Board & Competitive Exams</li>
+                            <li><i class="fas fa-check"></i> Problem-solving techniques</li>
+                        </ul>
+                        <div class="course-info">
+                            <span class="price">₹3,000/month</span>
+                            <span class="duration">6 months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-header">
+                        <i class="fas fa-atom"></i>
+                        <h3>Physics</h3>
+                    </div>
+                    <div class="course-content">
+                        <p>In-depth physics concepts with practical applications and problem-solving.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Class 9-12</li>
+                            <li><i class="fas fa-check"></i> JEE/NEET Preparation</li>
+                            <li><i class="fas fa-check"></i> Lab experiments</li>
+                        </ul>
+                        <div class="course-info">
+                            <span class="price">₹3,500/month</span>
+                            <span class="duration">8 months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-header">
+                        <i class="fas fa-flask"></i>
+                        <h3>Chemistry</h3>
+                    </div>
+                    <div class="course-content">
+                        <p>Comprehensive chemistry program covering organic, inorganic, and physical chemistry.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Class 9-12</li>
+                            <li><i class="fas fa-check"></i> Practical sessions</li>
+                            <li><i class="fas fa-check"></i> Reaction mechanisms</li>
+                        </ul>
+                        <div class="course-info">
+                            <span class="price">₹3,200/month</span>
+                            <span class="duration">8 months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-header">
+                        <i class="fas fa-dna"></i>
+                        <h3>Biology</h3>
+                    </div>
+                    <div class="course-content">
+                        <p>Complete biology curriculum with focus on botany, zoology, and human physiology.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Class 9-12</li>
+                            <li><i class="fas fa-check"></i> NEET Preparation</li>
+                            <li><i class="fas fa-check"></i> Diagram practice</li>
+                        </ul>
+                        <div class="course-info">
+                            <span class="price">₹2,800/month</span>
+                            <span class="duration">6 months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-header">
+                        <i class="fas fa-language"></i>
+                        <h3>English</h3>
+                    </div>
+                    <div class="course-content">
+                        <p>English language and literature program focusing on grammar, writing, and comprehension.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Class 6-12</li>
+                            <li><i class="fas fa-check"></i> Creative writing</li>
+                            <li><i class="fas fa-check"></i> Communication skills</li>
+                        </ul>
+                        <div class="course-info">
+                            <span class="price">₹2,500/month</span>
+                            <span class="duration">4 months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-header">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Competitive Exams</h3>
+                    </div>
+                    <div class="course-content">
+                        <p>Specialized coaching for JEE, NEET, and other competitive examinations.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> JEE Main & Advanced</li>
+                            <li><i class="fas fa-check"></i> NEET preparation</li>
+                            <li><i class="fas fa-check"></i> Mock tests</li>
+                        </ul>
+                        <div class="course-info">
+                            <span class="price">₹5,000/month</span>
+                            <span class="duration">12 months</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Students Say</h2>
+                <p>Success stories from our proud achievers</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Studify helped me improve my math scores from 60% to 95%. The teachers are amazing and very supportive!"</p>
+                    <div class="student-info">
+                        <h4>Priya Sharma</h4>
+                        <span>Class 12, Science</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The JEE preparation course at Studify is exceptional. I cleared JEE Advanced with a great rank!"</p>
+                    <div class="student-info">
+                        <h4>Rahul Kumar</h4>
+                        <span>JEE Advanced Qualifier</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Small batch sizes and personal attention made all the difference. Thank you Studify!"</p>
+                    <div class="student-info">
+                        <h4>Anjali Patel</h4>
+                        <span>NEET Qualifier</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The study material and regular tests helped me stay on track. Highly recommend Studify!"</p>
+                    <div class="student-info">
+                        <h4>Vikash Singh</h4>
+                        <span>Class 10, CBSE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to start your learning journey? Contact us today!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Education Street, Knowledge City, State 12345</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@studify.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon-Sat: 8:00 AM - 8:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" onsubmit="submitForm(event)">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="course" name="course" required>
+                            <option value="">Select Course Interest</option>
+                            <option value="mathematics">Mathematics</option>
+                            <option value="physics">Physics</option>
+                            <option value="chemistry">Chemistry</option>
+                            <option value="biology">Biology</option>
+                            <option value="english">English</option>
+                            <option value="competitive">Competitive Exams</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="public/logo.png" alt="Studify Logo" class="footer-logo">
+                        <span class="footer-brand-name">Studify</span>
+                    </div>
+                    <p>Empowering students to achieve academic excellence through quality education and personalized learning.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Popular Courses</h4>
+                    <ul>
+                        <li><a href="#courses">Mathematics</a></li>
+                        <li><a href="#courses">Physics</a></li>
+                        <li><a href="#courses">Chemistry</a></li>
+                        <li><a href="#courses">JEE Preparation</a></li>
+                        <li><a href="#courses">NEET Preparation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Education Street, Knowledge City</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope"></i> info@studify.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Studify. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
